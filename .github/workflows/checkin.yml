@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
           
       # 新增的步骤：随机延迟
-      - name: 随机延迟 (0-10分钟)
+      - name: 随机延迟 (0-200秒)
         run: |
           DELAY=$((RANDOM % 200))
           echo "将延迟 ${DELAY} 秒后执行..."
