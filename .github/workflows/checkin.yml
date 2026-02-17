@@ -21,9 +21,9 @@ jobs:
           python-version: '3.11'
           
       # 新增的步骤：随机延迟
-      - name: 随机延迟 (0-200秒)
+      - name: 随机延迟 (0-120秒)
         run: |
-          DELAY=$((RANDOM % 200))
+          DELAY=$((RANDOM % 120))
           echo "将延迟 ${DELAY} 秒后执行..."
           sleep $DELAY
       - name: 安装依赖
